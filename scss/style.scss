@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import "normalize.scss";
+@import "layout.scss";
+body {
+	font: 400 16px/1.2 "Roboto", sans-serif;
+	color: #FFF;
+}
+
+/* Layout */
+
+.ba-container {
+	max-width: 1200px;
+	padding: 0 20px;
+}
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+	display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+.ba-header {
+	background: #13519e url('../img/bg-header.jpg') 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 20px 0;
+}
+
+main {
+	min-height: 580px;
+	background: #e3ffde url('../img/bg.jpg');
+}
+
+.ba-footer {
+	text-align: center;
+	background: #13263e;
+	padding: 20px 0;
+}
+
+.ba-matches {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.ba-match {
+	color: #13263e;
+	font-weight: 700;
+	border: 2px solid #13263e;
+	border-radius: 10px;
+	padding: 30px 30px;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		margin: 0;
+	}
+
+	&__odds {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	&__odd {
+		padding: 10px 15px;
+		border: 1px solid #13263e;
+		border-radius: 50%;
+		background: #A0CBFF;
+
+		&:hover {
+			color: #fff;
+			background-color: #13263e;
+
+		}
+	}
+}
+
+

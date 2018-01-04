@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bet Test</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+	<header class="ba-header">
+		<div class="ba-container">
+
+			<a href="#" class="ba-logo">
+				<img src="img/ball.png" alt="Logo">
+			</a>
+			<h1 class="ba-test__title">Welcome to the BET TEST</h1>
+			<p class="ba-test__subtitle">Predict to your favorite matches</p>
+		</div>
+	</header>
+	<main>
+		<div class="ba-container">
+			<section class="ba-matches">
+				<script id="bet-tmpl" type="text/template">
+					<div class="ba-match">
+						<p class="ba-match__title">{{homeTeam}} vs. {{awayTeam}}</p>
+						<p class="ba-match__kickoff">{{kickoff}}</p>
+						<ul class="ba-match__odds">
+							<li><button class="ba-match__odd">1</button></li>
+							<li><button class="ba-match__odd">X</button></li>
+							<li><button class="ba-match__odd">2</button></li>
+						</ul>
+					</div>
+				</script>
+				<div class="ba-match">
+					<p class="ba-match__title">{{homeTeam}} vs. {{awayTeam}}</p>
+					<p class="ba-match__kickoff">{{kickoff}}</p>
+					<ul class="ba-match__odds">
+						<li><button class="ba-match__odd">1</button></li>
+						<li><button class="ba-match__odd">X</button></li>
+						<li><button class="ba-match__odd">2</button></li>
+					</ul>
+				</div>
+			</section>
+			<section class="ba-betting">
+
+			</section>
+		</div>
+	</main>
+	<footer class="ba-footer">
+		<div class="ba-container">
+			<h3 class="ba-author">Made by Ihor</h3>
+			<p class="ba-footer__subtitle">The Loyal Soldier of FOOTBALL</p>
+		</div>
+	</footer>
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
