@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import "normalize.scss";
 @import "layout.scss";
+
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 960px;
+$bp-xlarge: 1200px;
+
 body {
 	font: 400 16px/1.2 "Roboto", sans-serif;
 	color: #FFF;
@@ -66,7 +72,6 @@ textarea {}
 }
 
 main {
-	min-height: 580px;
 	background: #e3ffde url('../img/bg.jpg');
 }
 
@@ -79,7 +84,8 @@ main {
 .ba-matches {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
+	padding-top: 20px;
+	flex-wrap: wrap;
 }
 
 .ba-match {
@@ -92,9 +98,18 @@ main {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+
+
+	@media (min-width:$bp-medium) {
+		width: 30%;
+	}
+
 
 	&__title {
 		margin: 0;
+		flex-grow: 2;
 	}
 
 	&__odds {
@@ -117,7 +132,25 @@ main {
 			background-color: #13263e;
 
 		}
+
+		&.pressed {
+			color: white;
+			background-color: #13263e;
+		}
 	}
 }
 
+.ba-betting {
+	padding: 20px 0;
+}
 
+#results {
+	color: #13263e;
+	font-weight: 700;
+	border: 2px solid #13263e;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}

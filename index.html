@@ -27,27 +27,21 @@
 			<section class="ba-matches">
 				<script id="bet-tmpl" type="text/template">
 					<div class="ba-match">
-						<p class="ba-match__title">{{homeTeam}} vs. {{awayTeam}}</p>
-						<p class="ba-match__kickoff">{{kickoff}}</p>
+						<p class="ba-match__title"></p>
+						<p class="ba-match__kickoff"></p>
 						<ul class="ba-match__odds">
-							<li><button class="ba-match__odd">1</button></li>
-							<li><button class="ba-match__odd">X</button></li>
-							<li><button class="ba-match__odd">2</button></li>
+							<li><button class="ba-match__odd" data-odd-type="1">1</button></li>
+							<li><button class="ba-match__odd" data-odd-type="x">X</button></li>
+							<li><button class="ba-match__odd" data-odd-type="2">2</button></li>
 						</ul>
 					</div>
 				</script>
-				<div class="ba-match">
-					<p class="ba-match__title">{{homeTeam}} vs. {{awayTeam}}</p>
-					<p class="ba-match__kickoff">{{kickoff}}</p>
-					<ul class="ba-match__odds">
-						<li><button class="ba-match__odd">1</button></li>
-						<li><button class="ba-match__odd">X</button></li>
-						<li><button class="ba-match__odd">2</button></li>
-					</ul>
-				</div>
+
 			</section>
 			<section class="ba-betting">
-
+				<div id="results">
+					<p class="ba-final"></p>
+				</div>
 			</section>
 		</div>
 	</main>

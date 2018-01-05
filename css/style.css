@@ -767,7 +767,6 @@ select {
   padding: 20px 0; }
 
 main {
-  min-height: 580px;
   background: #e3ffde url("../img/bg.jpg"); }
 
 .ba-footer {
@@ -782,7 +781,9 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px 0; }
+  padding-top: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .ba-match {
   color: #13263e;
@@ -798,9 +799,17 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .ba-match {
+      width: 30%; } }
   .ba-match__title {
-    margin: 0; }
+    margin: 0;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2; }
   .ba-match__odds {
     list-style: none;
     margin: 0;
@@ -818,5 +827,26 @@ main {
     .ba-match__odd:hover {
       color: #fff;
       background-color: #13263e; }
+    .ba-match__odd.pressed {
+      color: white;
+      background-color: #13263e; }
+
+.ba-betting {
+  padding: 20px 0; }
+
+#results {
+  color: #13263e;
+  font-weight: 700;
+  border: 2px solid #13263e;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
